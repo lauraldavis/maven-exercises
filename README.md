@@ -1,0 +1,3 @@
+# maven-exercises
+
+Dependency Management
