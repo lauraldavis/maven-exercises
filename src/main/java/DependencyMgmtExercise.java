@@ -8,21 +8,20 @@ public class DependencyMgmtExercise {
     public static void main(String[] args) {
         // prompt user for input and
         // tell whether input is a number
-        // flips the case of the string
-        // reverses the string
+        // flip the case of the string
+        // reverse the string
 
         Scanner sc = new Scanner(System.in); // .useDelimiter("\n");
 
-        String strPrompt = "Enter a string (one or more words): ";
+        String strPrompt = "Please enter something: ";
         System.out.println(strPrompt);
         String userInput = sc.nextLine();
-        System.out.println("You Entered: \"" + userInput + "\"");
+        System.out.println("You entered: \"" + userInput + "\"");
 
+        // Print output
         String isNum = (StringUtils.isNumeric(userInput)) ? "" : "not ";
         System.out.println("\"" + userInput + "\" is " + isNum + "a number");
-
         System.out.println("Flipped Case: " + swapCase(userInput));
-
         System.out.println("Reversed: " + reverse(userInput));
     }
 }
